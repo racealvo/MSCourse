@@ -1,0 +1,272 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Module1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Assign sample student info
+            string studentFirstName = "John";
+            string studentLastName = "Student";
+            DateTime studentBirthDate = new DateTime(1995, 1, 31);
+            string studentAddressLine1 = "1 Main Street";
+            string studentAddressLine2 = string.Empty;
+            string studentCity = "Anytown";
+            string studentStateProvince = "MA";
+            string studentZipPostal = "01234";
+            string studentCountry = "United States";
+
+            // Write everything
+            Console.WriteLine("Preset Values\n");
+            Console.WriteLine("studentFirstName: {0}", studentFirstName);
+            Console.WriteLine("studentLastName: {0}", studentLastName);
+            Console.WriteLine("studentBirthDate: {0}", studentBirthDate);
+            Console.WriteLine("studentAddressLine1: {0}", studentAddressLine1);
+            Console.WriteLine("studentAddressLine2: {0}", studentAddressLine2);
+            Console.WriteLine("studentCity: {0}", studentCity);
+            Console.WriteLine("studentStateProvinc: {0}", studentStateProvince);
+            Console.WriteLine("studentZipPostal: {0}", studentZipPostal);
+            Console.WriteLine("studentCountry: {0}", studentCountry);
+
+            Console.WriteLine("\nHit any key to continue on to input section.");
+            Console.ReadKey();
+
+
+            // Challenge: prompt user for student data, and save it to existing variables.
+            Console.WriteLine("Enter a new value for each field.\n");
+
+            Console.WriteLine("studentFirstName: {0}", studentFirstName);
+            studentFirstName = Console.ReadLine();
+            Console.WriteLine("New studentFirstName: {0}", studentFirstName);
+
+            Console.WriteLine("studentLastName: {0}", studentLastName);
+            studentLastName = Console.ReadLine();
+            Console.WriteLine("New studentLastName: {0}", studentLastName);
+
+            bool invalidData = true;
+            while (invalidData)
+            {
+                try
+                {
+                    Console.WriteLine("studentBirthDate: {0}", studentBirthDate);
+                    Console.Write("Use MM/DD/YYYY\n");
+                    studentBirthDate = DateTime.Parse(Console.ReadLine());
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    continue;
+                }
+                Console.WriteLine("studentBirthDate: {0}", studentBirthDate);
+                invalidData = false;
+            }
+
+            Console.WriteLine("studentAddressLine1: {0}\n", studentAddressLine1);
+            studentAddressLine1 = Console.ReadLine();
+            Console.WriteLine("New studentAddressLine1: {0}\n", studentAddressLine1);
+
+            Console.WriteLine("studentAddressLine2: {0}\n", studentAddressLine2);
+            studentAddressLine2 = Console.ReadLine();
+            Console.WriteLine("New studentAddressLine2: {0}\n", studentAddressLine2);
+
+            Console.WriteLine("studentCity: {0}\n", studentCity);
+            studentCity = Console.ReadLine();
+            Console.WriteLine("New studentCity: {0}\n", studentCity);
+
+            Console.WriteLine("studentStateProvince: {0}\n", studentStateProvince);
+            studentStateProvince = Console.ReadLine();
+            Console.WriteLine("New studentStateProvince: {0}\n", studentStateProvince);
+
+            Console.WriteLine("studentZipPostal: {0}\n", studentZipPostal);
+            studentZipPostal = Console.ReadLine();
+            Console.WriteLine("New studentZipPostal: {0}\n", studentZipPostal);
+
+            Console.WriteLine("studentCountry: {0}\n", studentCountry);
+            studentCountry = Console.ReadLine();
+            Console.WriteLine("New studentCountry: {0}\n", studentCountry);
+
+
+            // Write everything - definitely NOT DRY code right now
+            Console.WriteLine("New Values\n");
+            Console.WriteLine("studentFirstName: {0}", studentFirstName);
+            Console.WriteLine("studentLastName: {0}", studentLastName);
+            Console.WriteLine("studentBirthDate: {0}", studentBirthDate);
+            Console.WriteLine("studentAddressLine1: {0}", studentAddressLine1);
+            Console.WriteLine("studentAddressLine2: {0}", studentAddressLine2);
+            Console.WriteLine("studentCity: {0}", studentCity);
+            Console.WriteLine("studentStateProvinc: {0}", studentStateProvince);
+            Console.WriteLine("studentZipPostal: {0}", studentZipPostal);
+            Console.WriteLine("studentCountry: {0}", studentCountry);
+
+            Console.WriteLine("\nHit any key to terminate the program.");
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+            // Teacher
+            String teacherFirstName = String.Empty;
+            String teacherLastName = String.Empty;
+            DateTime teacherBirthDate = DateTime.Now;
+            String teacherAddressLine1 = String.Empty;
+            String teacherAddressLine2 = String.Empty;
+            String teacherCity = String.Empty;
+            String teacherStateProvince = String.Empty;
+            String teacherZipPostal = String.Empty;
+            String teacherCountry = String.Empty;
+
+            // UProgram
+            String programName = String.Empty;
+            String departmentHead = String.Empty;
+            String degrees = String.Empty;
+
+            // Degree
+            String degreeName = String.Empty;
+            Int16 creditsRequired = 0;
+
+            // Course
+            String courseName = String.Empty;
+            Int16 credits = 0;
+            Int16 durationInWeeks = 0;
+            String teacher = String.Empty;
+
+
+
+
+
+
+
+            // Assign sample teacher info
+            teacherFirstName = "Jane";
+            teacherLastName = "Teacher";
+            teacherBirthDate = new DateTime(1965, 2, 28);
+            teacherAddressLine1 = "1 School Street";
+            teacherCity = "College Town";
+            teacherStateProvince = "WY";
+            teacherZipPostal = "54321";
+            teacherCountry = "United States";
+
+            // Assign sample UProgram info
+            programName = "Computer Science";
+            departmentHead = "Charles Headmaster";
+            degrees = "BA";
+
+            // Assign sample Degree info
+            degreeName = "BA";
+            creditsRequired = 40;
+
+            // Assign sample Course info
+            courseName = "C#/.NET";
+            credits = 1;
+            durationInWeeks = 10;
+            teacher = "Jane Teacher";
+
+
+
+
+
+
+            Console.WriteLine("teacherFirstName: {0}", teacherFirstName);
+            Console.WriteLine("teacherLastName: {0}", teacherLastName);
+            Console.WriteLine("teacherBirthDate: {0}", teacherBirthDate);
+            Console.WriteLine("teacherAddressLine1: {0}", teacherAddressLine1);
+            Console.WriteLine("teacherAddressLine2: {0}", teacherAddressLine2);
+            Console.WriteLine("teacherCity: {0}", teacherCity);
+            Console.WriteLine("teacherStateProvinc: {0}", teacherStateProvince);
+            Console.WriteLine("teacherZipPostal: {0}", teacherZipPostal);
+            Console.WriteLine("teacherCountry: {0}", teacherCountry);
+
+            Console.WriteLine("programName: {0}", programName);
+            Console.WriteLine("departmentHead: {0}", departmentHead);
+            Console.WriteLine("degrees: {0}", degrees);
+
+            Console.WriteLine("degreeName: {0}", degreeName);
+            Console.WriteLine("creditsRequired: {0}", creditsRequired);
+
+            Console.WriteLine("courseName: {0}", courseName);
+            Console.WriteLine("credits: {0}", credits);
+            Console.WriteLine("durationInWeeks: {0}", durationInWeeks);
+            Console.WriteLine("teacher: {0}", teacher);
+
+
+
+
+            Console.WriteLine("teacherFirstName: {0}", teacherFirstName);
+            studentFirstName = Console.ReadLine();
+            Console.WriteLine("New teacherFirstName: {0}", teacherFirstName);
+
+            = Console.ReadLine();
+
+            Console.WriteLine("teacherLastName: {0}", teacherLastName);
+            teacherLastName = Console.ReadLine();
+            Console.WriteLine("New teacherLastName: {0}", teacherLastName);
+
+            // Rewrite - with method
+            Console.WriteLine("teacherBirthDate: {0}", teacherBirthDate);
+            teacherBirthDate = Console.ReadLine();
+            Console.WriteLine("teacherBirthDate: {0}", teacherBirthDate);
+
+            //Console.WriteLine("teacherAddressLine1: {0}", teacherAddressLine1);
+            //Console.WriteLine("teacherAddressLine2: {0}", teacherAddressLine2);
+            //Console.WriteLine("teacherCity: {0}", teacherCity);
+            //Console.WriteLine("teacherStateProvinc: {0}", teacherStateProvince);
+            //Console.WriteLine("teacherZipPostal: {0}", teacherZipPostal);
+            //Console.WriteLine("teacherCountry: {0}", teacherCountry);
+
+            //Console.WriteLine("programName: {0}", programName);
+            //Console.WriteLine("departmentHead: {0}", departmentHead);
+            //Console.WriteLine("degrees: {0}", degrees);
+
+            //Console.WriteLine("degreeName: {0}", degreeName);
+            //Console.WriteLine("creditsRequired: {0}", creditsRequired);
+
+            //Console.WriteLine("courseName: {0}", courseName);
+            //Console.WriteLine("credits: {0}", credits);
+            //Console.WriteLine("durationInWeeks: {0}", durationInWeeks);
+            //Console.WriteLine("teacher: {0}", teacher);
+
+
+
+
+
+/*
+studentFirstName
+studentLastName
+studentBirthDate
+studentAddressLine1
+studentAddressLine2
+studentCity
+studentStateProvince
+studentZipPostal
+studentCountry
+
+teacherFirstName
+teacherLastName
+teacherBirthDate
+teacherAddressLine1
+teacherAddressLine2
+teacherCity
+teacherStateProvince
+teacherZipPostal
+teacherCountry
+
+programName
+departmentHead
+degrees
+
+degreeName
+creditsRequired
+
+courseName
+credits
+durationInWeeks
+teacher
+*/

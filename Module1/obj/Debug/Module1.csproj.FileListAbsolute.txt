@@ -1,0 +1,6 @@
+c:\users\ray-2011\documents\visual studio 2015\Projects\MOOC\Module1\Module1\bin\Debug\Module1.exe.config
+c:\users\ray-2011\documents\visual studio 2015\Projects\MOOC\Module1\Module1\bin\Debug\Module1.exe
+c:\users\ray-2011\documents\visual studio 2015\Projects\MOOC\Module1\Module1\bin\Debug\Module1.pdb
+c:\users\ray-2011\documents\visual studio 2015\Projects\MOOC\Module1\Module1\obj\Debug\Module1.csprojResolveAssemblyReference.cache
+c:\users\ray-2011\documents\visual studio 2015\Projects\MOOC\Module1\Module1\obj\Debug\Module1.exe
+c:\users\ray-2011\documents\visual studio 2015\Projects\MOOC\Module1\Module1\obj\Debug\Module1.pdb
